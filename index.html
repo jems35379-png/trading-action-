@@ -3,761 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>मेरी पेशेवर वेबसाइट</title>
-    <!-- Google Fonts से Poppins फॉन्ट आयात करें -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #3b82f6; /* नीला */
-            --background-color: #1f2937; /* गहरा ग्रे */
-            --card-background: #374151; /* मध्यम ग्रे */
-            --text-color: #e5e7eb; /* हल्का ग्रे */
-            --light-text-color: #9ca3af; /* और हल्का ग्रे */
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 800px;
-            background-color: var(--card-background);
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            font-weight: 400;
-            color: var(--text-color);
-            margin-top: 40px;
-        }
-
-        p {
-            font-size: 1rem;
-            line-height: 1.8;
-            color: var(--light-text-color);
-            text-align: justify;
-        }
-        
-        /* नया फ़ीचर: संपर्क फ़ॉर्म का स्टाइल */
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin-top: 20px;
-            text-align: left;
-        }
-
-        label {
-            font-size: 0.9rem;
-            color: var(--text-color);
-            margin-bottom: -5px;
-        }
-
-        input, textarea {
-            padding: 12px;
-            border: 1px solid #4b5563;
-            border-radius: 8px;
-            background-color: #1f2937;
-            color: var(--text-color);
-            width: 100%;
-            box-sizing: border-box;
-            transition: border-color 0.3s;
-        }
-
-        input:focus, textarea:focus {
-            outline: none;
-            border-color: var(--primary-color);
-        }
-
-        button {
-            padding: 12px 25px;
-            border: none;
-            border-radius: 8px;
-            background-color: var(--primary-color);
-            color: white;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.1s ease;
-        }
-
-        button:hover {
-            background-color: #2563eb;
-            transform: translateY(-2px);
-        }
-
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-            .container {
-                padding: 20px;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <h1>मेरी पहली वेबसाइट</h1>
-        <p>
-            नमस्ते! यह मेरी पहली वेबसाइट है, जिसे मैंने HTML और CSS का उपयोग करके बनाया है। यह एक बहुत ही मज़ेदार अनुभव रहा है, और मुझे कोडिंग की दुनिया को सीखने में बहुत खुशी हो रही है।
-        </p>
-
-        <h2>एक नई कहानी</h2>
-        <p>
-            आज मैं अपनी कोडिंग यात्रा का एक नया अध्याय शुरू कर रहा हूँ। मैंने सीखा है कि किसी भी बड़ी चीज़ को छोटे-छोटे हिस्सों में तोड़कर बनाना कितना आसान होता है। यह वेबसाइट भी मेरे लिए एक ऐसा ही प्रोजेक्ट है, जहाँ मैं हर दिन कुछ नया सीख रहा हूँ और उसे लागू कर रहा हूँ। मेरा लक्ष्य है कि मैं एक ऐसा डेवलपर बनूँ जो न केवल कोड लिख सके, बल्कि समस्याओं को रचनात्मक तरीके से हल भी कर सके।
-        </p>
-
-        <hr style="margin: 40px 0; border: 0; border-top: 1px solid #4b5563;">
-        <h2>हमसे संपर्क करें</h2>
-        <form action="#" method="POST">
-            <label for="name">आपका नाम:</label>
-            <input type="text" id="name" name="user_name" placeholder="अपना नाम यहाँ लिखें" required>
-
-            <label for="email">आपका ईमेल:</label>
-            <input type="email" id="email" name="user_email" placeholder="अपना ईमेल यहाँ लिखें" required>
-
-            <label for="message">आपका संदेश:</label>
-            <textarea id="message" name="user_message" rows="4" placeholder="अपना संदेश यहाँ लिखें" required></textarea>
-
-            <button type="submit">संदेश भेजें</button>
-        </form>
-    </div>
-
-</body>
-</html> html>
-<html lang="hi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>मेरी पेशेवर वेबसाइट</title>
-    <!-- Google Fonts से Poppins फॉन्ट आयात करें -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #3b82f6; /* नीला */
-            --background-color: #1f2937; /* गहरा ग्रे */
-            --card-background: #374151; /* मध्यम ग्रे */
-            --text-color: #e5e7eb; /* हल्का ग्रे */
-            --light-text-color: #9ca3af; /* और हल्का ग्रे */
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 800px;
-            background-color: var(--card-background);
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            font-weight: 400;
-            color: var(--text-color);
-            margin-top: 40px;
-        }
-
-        p {
-            font-size: 1rem;
-            line-height: 1.8;
-            color: var(--light-text-color);
-            text-align: justify;
-        }
-        
-        /* नया फ़ीचर: संपर्क फ़ॉर्म का स्टाइल */
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin-top: 20px;
-            text-align: left;
-        }
-
-        label {
-            font-size: 0.9rem;
-            color: var(--text-color);
-            margin-bottom: -5px;
-        }
-
-        input, textarea {
-            padding: 12px;
-            border: 1px solid #4b5563;
-            border-radius: 8px;
-            background-color: #1f2937;
-            color: var(--text-color);
-            width: 100%;
-            box-sizing: border-box;
-            transition: border-color 0.3s;
-        }
-
-        input:focus, textarea:focus {
-            outline: none;
-            border-color: var(--primary-color);
-        }
-
-        button {
-            padding: 12px 25px;
-            border: none;
-            border-radius: 8px;
-            background-color: var(--primary-color);
-            color: white;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.1s ease;
-        }
-
-        button:hover {
-            background-color: #2563eb;
-            transform: translateY(-2px);
-        }
-
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-            .container {
-                padding: 20px;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <h1>मेरी पहली वेबसाइट</h1>
-        <p>
-            नमस्ते! यह मेरी पहली वेबसाइट है, जिसे मैंने HTML और CSS का उपयोग करके बनाया है। यह एक बहुत ही मज़ेदार अनुभव रहा है, और मुझे कोडिंग की दुनिया को सीखने में बहुत खुशी हो रही है।
-        </p>
-
-        <h2>एक नई कहानी</h2>
-        <p>
-            आज मैं अपनी कोडिंग यात्रा का एक नया अध्याय शुरू कर रहा हूँ। मैंने सीखा है कि किसी भी बड़ी चीज़ को छोटे-छोटे हिस्सों में तोड़कर बनाना कितना आसान होता है। यह वेबसाइट भी मेरे लिए एक ऐसा ही प्रोजेक्ट है, जहाँ मैं हर दिन कुछ नया सीख रहा हूँ और उसे लागू कर रहा हूँ। मेरा लक्ष्य है कि मैं एक ऐसा डेवलपर बनूँ जो न केवल कोड लिख सके, बल्कि समस्याओं को रचनात्मक तरीके से हल भी कर सके।
-        </p>
-
-        <hr style="margin: 40px 0; border: 0; border-top: 1px solid #4b5563;">
-        <h2>हमसे संपर्क करें</h2>
-        <form action="#" method="POST">
-            <label for="name">आपका नाम:</label>
-            <input type="text" id="name" name="user_name" placeholder="अपना नाम यहाँ लिखें" required>
-
-            <label for="email">आपका ईमेल:</label>
-            <input type="email" id="email" name="user_email" placeholder="अपना ईमेल यहाँ लिखें" required>
-
-            <label for="message">आपका संदेश:</label>
-            <textarea id="message" name="user_message" rows="4" placeholder="अपना संदेश यहाँ लिखें" required></textarea>
-
-            <button type="submit">संदेश भेजें</button>
-        </form>
-    </div>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="hi"><!DOCTYPE html>
-<html lang="hi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>मेरी पहली वेबसाइट</title>
-    <!-- यह CSS स्टाइल है, जो आपकी वेबसाइट को सुंदर बनाता है। -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        h1, h2 {
-            color: #0056b3;
-            text-align: center;
-        }
-        p {
-            line-height: 1.6;
-            text-align: justify;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        input, textarea, button {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 100%;
-            box-sizing: border-box; /* padding को width में शामिल करने के लिए */
-        }
-        button {
-            background-color: #0056b3;
-            color: white;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        button:hover {
-            background-color: #004494;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <!-- यह आपकी वेबसाइट का शीर्षक है। -->
-        <h1>मेरी पहली वेबसाइट</h1>
-
-        <!-- यह आपका पुराना लेख है। -->
-        <p>
-            नमस्ते! यह मेरी पहली वेबसाइट है, जिसे मैंने HTML और CSS का उपयोग करके बनाया है। यह एक बहुत ही मज़ेदार अनुभव रहा है, और मुझे कोडिंग की दुनिया को सीखने में बहुत खुशी हो रही है।
-        </p>
-
-        <!-- यह आपका नया लेख है। -->
-        <h2>एक नई कहानी</h2>
-        <p>
-            आज मैं अपनी कोडिंग यात्रा का एक नया अध्याय शुरू कर रहा हूँ। मैंने सीखा है कि किसी भी बड़ी चीज़ को छोटे-छोटे हिस्सों में तोड़कर बनाना कितना आसान होता है। यह वेबसाइट भी मेरे लिए एक ऐसा ही प्रोजेक्ट है, जहाँ मैं हर दिन कुछ नया सीख रहा हूँ और उसे लागू कर रहा हूँ। मेरा लक्ष्य है कि मैं एक ऐसा डेवलपर बनूँ जो न केवल कोड लिख सके, बल्कि समस्याओं को रचनात्मक तरीके से हल भी कर सके।
-        </p>
-
-        <!-- यह आपका नया फ़ीचर है: "हमसे संपर्क करें" सेक्शन। -->
-        <hr style="margin: 20px 0;">
-        <h2>हमसे संपर्क करें</h2>
-        <!--
-            यह एक साधारण HTML फॉर्म है।
-            यह केवल देखने के लिए है और इसमें कोई कार्यक्षमता नहीं है।
-            फॉर्म सबमिट करने के लिए सर्वर-साइड (backend) कोड की जरूरत होती है।
-        -->
-        <form action="#" method="POST">
-            <label for="name">आपका नाम:</label>
-            <input type="text" id="name" name="user_name" placeholder="अपना नाम यहाँ लिखें" required>
-
-            <label for="email">आपका ईमेल:</label>
-            <input type="email" id="email" name="user_email" placeholder="अपना ईमेल यहाँ लिखें" required>
-
-            <label for="message">आपका संदेश:</label>
-            <textarea id="message" name="user_message" rows="4" placeholder="अपना संदेश यहाँ लिखें" required></textarea>
-
-            <button type="submit">संदेश भेजें</button>
-        </form>
-    </div>
-
-</body>
-</html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>मेरी वेबसाइट</title>
-    <!-- Tailwind CSS CDN -->
+    <title>TradingBhai.com - शेयर बाजार की जानकारी</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Font - Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
         body {
-            font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc; /* हल्के नीले-ग्रे रंग का बैकग्राउंड */
+        }
+        .text-hero {
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
         }
     </style>
 </head>
-<body class="bg-gray-900 text-white">
+<body class="text-gray-800">
 
-    <!-- Header Section -->
-    <header class="bg-gray-800 py-4 shadow-lg">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-teal-400">मेरा लोगो</a>
-            <nav class="hidden md:flex space-x-6">
-                <a href="#about" class="text-white hover:text-teal-400 transition-colors duration-300">हमारे बारे में</a>
-                <a href="#services" class="text-white hover:text-teal-400 transition-colors duration-300">हमारी सेवाएँ</a>
-                <a href="#gallery" class="text-white hover:text-teal-400 transition-colors duration-300">गैलरी</a>
-                <a href="#features" class="text-white hover:text-teal-400 transition-colors duration-300">विशेषताएं</a>
-                <a href="#contact" class="text-white hover:text-teal-400 transition-colors duration-300">संपर्क करें</a>
+    <header class="bg-indigo-700 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">ट्रेडिंगभाई.कॉम</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="hover:text-indigo-200 transition duration-300">होम</a></li>
+                    <li><a href="#" class="hover:text-indigo-200 transition duration-300">मार्केट</a></li>
+                    <li><a href="#" class="hover:text-indigo-200 transition duration-300">ब्लॉग</a></li>
+                    <li><a href="#" class="hover:text-indigo-200 transition duration-300">संपर्क</a></li>
+                </ul>
             </nav>
-            <!-- Mobile Menu Button -->
-            <button class="md:hidden text-white focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
-            </button>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <main>
-        <section class="bg-gray-900 py-20 md:py-32 flex items-center justify-center">
-            <div class="container mx-auto px-4 text-center">
-                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-white mb-4">
-                    आपका स्वागत है!
-                </h1>
-                <p class="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-                    यह एक आधुनिक और पूरी तरह से रिस्पॉन्सिव वेबसाइट का शुरुआती टेम्पलेट है। इसे अपनी पसंद के अनुसार आसानी से अनुकूलित करें।
-                </p>
-                <a href="#about" class="bg-teal-500 hover:bg-teal-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105">
-                    और जानें
-                </a>
-            </div>
-        </section>
+    <section class="relative bg-center bg-cover h-[500px] flex items-center justify-center p-4 rounded-b-3xl shadow-xl" style="background-image: url('https://placehold.co/1200x500/1e3a8a/e0e7ff?text=Professional+Trading+Background');">
+        <div class="absolute inset-0 bg-black opacity-50 rounded-b-3xl"></div>
+        <div class="text-center relative z-10">
+            <h2 class="text-4xl md:text-6xl font-extrabold text-white text-hero mb-4">शेयर बाजार की दुनिया में आपका स्वागत है</h2>
+            <p class="text-lg md:text-xl text-indigo-100 font-medium">सही जानकारी, सही समय पर।</p>
+        </div>
+    </section>
 
-        <!-- About Us Section -->
-        <section id="about" class="py-20 bg-gray-800">
-            <div class="container mx-auto px-4 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">हमारे बारे में</h2>
-                <div class="max-w-3xl mx-auto">
-                    <p class="text-lg text-gray-400 mb-6">
-                        हमारी यात्रा एक छोटे से विचार से शुरू हुई: लोगों को बेहतर और ज़्यादा उपयोगी डिजिटल अनुभव प्रदान करना। हम रचनात्मकता, तकनीकी उत्कृष्टता और ग्राहक संतुष्टि के प्रति समर्पित हैं।
-                    </p>
-                    <p class="text-lg text-gray-400">
-                        हमारी टीम का हर सदस्य अपने-अपने क्षेत्र में माहिर है और हम मिलकर आपके सपनों को सच करने का काम करते हैं। हम सिर्फ़ वेबसाइट नहीं बनाते, बल्कि हम साझेदारी करते हैं।
-                    </p>
+    <main class="container mx-auto p-4 md:p-8 mt-8">
+        
+        <section class="mb-12">
+            <h3 class="text-3xl font-bold text-center text-indigo-700 mb-6">लाइव मार्केट डेटा</h3>
+            <div id="market-data-container" class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div id="nifty-card" class="bg-white rounded-xl p-6 shadow-lg flex items-center justify-between transition duration-300 hover:shadow-xl hover:scale-105">
+                    <div>
+                        <p class="text-sm font-semibold text-gray-500">निफ्टी 50</p>
+                        <p id="nifty-price" class="text-3xl font-bold text-gray-800 animate-pulse">...</p>
+                    </div>
+                    <div>
+                        <span id="nifty-change" class="text-lg font-semibold">...</span>
+                    </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Services Section (नया सेक्शन) -->
-        <section id="services" class="py-20 bg-gray-900">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">हमारी सेवाएँ</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Service Card 1 -->
-                    <div class="bg-gray-700 p-8 rounded-lg shadow-xl text-center transition-transform transform hover:scale-105">
-                        <div class="text-teal-400 mb-4">
-                            <!-- Icon -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9.25 10L14.75 10L14.25 17M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2Z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">वेबसाइट डेवलपमेंट</h3>
-                        <p class="text-gray-400">आधुनिक, तेज़ और सुरक्षित वेबसाइटें बनाना हमारी विशेषज्ञता है।</p>
+                <div id="banknifty-card" class="bg-white rounded-xl p-6 shadow-lg flex items-center justify-between transition duration-300 hover:shadow-xl hover:scale-105">
+                    <div>
+                        <p class="text-sm font-semibold text-gray-500">बैंक निफ्टी</p>
+                        <p id="banknifty-price" class="text-3xl font-bold text-gray-800 animate-pulse">...</p>
                     </div>
-                    <!-- Service Card 2 -->
-                    <div class="bg-gray-700 p-8 rounded-lg shadow-xl text-center transition-transform transform hover:scale-105">
-                        <div class="text-teal-400 mb-4">
-                            <!-- Icon -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20h4V4h-4v16zm-6 0h4V12H4v8zM18 10h4V4h-4v6z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">एप्लिकेशन डिज़ाइन</h3>
-                        <p class="text-gray-400">उपयोगकर्ता-अनुकूल मोबाइल और वेब एप्लिकेशन डिज़ाइन करना।</p>
-                    </div>
-                    <!-- Service Card 3 -->
-                    <div class="bg-gray-700 p-8 rounded-lg shadow-xl text-center transition-transform transform hover:scale-105">
-                        <div class="text-teal-400 mb-4">
-                            <!-- Icon -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">डिजिटल मार्केटिंग</h3>
-                        <p class="text-gray-400">आपकी ऑनलाइन उपस्थिति को बेहतर बनाने के लिए रणनीतियाँ।</p>
+                    <div>
+                        <span id="banknifty-change" class="text-lg font-semibold">...</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Gallery Section (नया सेक्शन) -->
-        <section id="gallery" class="py-20 bg-gray-800">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">हमारी गैलरी</h2>
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-                    <!-- Gallery Item 1 -->
-                    <div class="rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
-                        <img src="https://placehold.co/600x400/1e293b/d1d5db?text=प्रोजेक्ट+1" alt="प्रोजेक्ट 1 की तस्वीर" class="w-full h-auto object-cover">
-                    </div>
-                    <!-- Gallery Item 2 -->
-                    <div class="rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
-                        <img src="https://placehold.co/600x400/1e293b/d1d5db?text=प्रोजेक्ट+2" alt="प्रोजेक्ट 2 की तस्वीर" class="w-full h-auto object-cover">
-                    </div>
-                    <!-- Gallery Item 3 -->
-                    <div class="rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
-                        <img src="https://placehold.co/600x400/1e293b/d1d5db?text=प्रोजेक्ट+3" alt="प्रोजेक्ट 3 की तस्वीर" class="w-full h-auto object-cover">
-                    </div>
-                    <!-- Gallery Item 4 -->
-                    <div class="rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
-                        <img src="https://placehold.co/600x400/1e293b/d1d5db?text=प्रोजेक्ट+4" alt="प्रोजेक्ट 4 की तस्वीर" class="w-full h-auto object-cover">
-                    </div>
-                    <!-- Gallery Item 5 -->
-                    <div class="rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
-                        <img src="https://placehold.co/600x400/1e293b/d1d5db?text=प्रोजेक्ट+5" alt="प्रोजेक्ट 5 की तस्वीर" class="w-full h-auto object-cover">
-                    </div>
-                    <!-- Gallery Item 6 -->
-                    <div class="rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
-                        <img src="https://placehold.co/600x400/1e293b/d1d5db?text=प्रोजेक्ट+6" alt="प्रोजेक्ट 6 की तस्वीर" class="w-full h-auto object-cover">
-                    </div>
+        <hr class="my-12 border-gray-300">
+
+        <section class="mb-12">
+            <h3 class="text-3xl font-bold text-center text-indigo-700 mb-6">कंपनी रिजल्ट की खबरें</h3>
+            <div id="news-container" class="space-y-6">
                 </div>
-            </div>
         </section>
 
-        <!-- Features Section -->
-        <section id="features" class="py-20 bg-gray-900">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">हमारी विशेषताएं</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Feature Card 1 -->
-                    <div class="bg-gray-700 p-8 rounded-lg shadow-xl text-center transition-transform transform hover:scale-105">
-                        <div class="text-teal-400 mb-4">
-                            <!-- Icon -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">रिस्पॉन्सिव डिज़ाइन</h3>
-                        <p class="text-gray-400">यह वेबसाइट सभी डिवाइसों पर, चाहे वह मोबाइल हो या टैबलेट, अच्छी दिखती है।</p>
-                    </div>
-                    <!-- Feature Card 2 -->
-                    <div class="bg-gray-700 p-8 rounded-lg shadow-xl text-center transition-transform transform hover:scale-105">
-                        <div class="text-teal-400 mb-4">
-                            <!-- Icon -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">बहुत तेज़</h3>
-                        <p class="text-gray-400">हल्का-फुल्का कोड इसे बहुत तेज़ी से लोड करता है, जिससे उपयोगकर्ता का अनुभव बेहतर होता है।</p>
-                    </div>
-                    <!-- Feature Card 3 -->
-                    <div class="bg-gray-700 p-8 rounded-lg shadow-xl text-center transition-transform transform hover:scale-105">
-                        <div class="text-teal-400 mb-4">
-                            <!-- Icon -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.018A9.955 9.955 0 0112 2a9.962 9.962 0 016.381 2.443M16 16v2a2 2 0 01-2 2H8a2 2 0 01-2-2v-2m-2-12v12m-2 0h16a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2a2 2 0 012-2z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">आसान अनुकूलन</h3>
-                        <p class="text-gray-400">यह कोड आसानी से समझने और बदलने योग्य है। आप इसे अपनी पसंद से बदल सकते हैं।</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="py-20 bg-gray-800">
-            <div class="container mx-auto px-4 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">संपर्क करें</h2>
-                <p class="text-lg md:text-xl text-gray-400 mb-8 max-w-xl mx-auto">
-                    यदि आपके कोई प्रश्न हैं या आप किसी प्रोजेक्ट के लिए मुझसे संपर्क करना चाहते हैं, तो बेझिझक पहुँचें।
-                </p>
-                <a href="mailto:email@example.com" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-colors duration-300">
-                    ईमेल भेजें
-                </a>
-            </div>
-        </section>
     </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 py-6 text-center text-gray-400">
-        <p>© 2025 मेरी वेबसाइट। सभी अधिकार सुरक्षित।</p>
+    
+    <footer class="bg-gray-900 text-gray-300 p-8 rounded-t-3xl shadow-inner">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 TradingBhai.com. सभी अधिकार सुरक्षित।</p>
+            <div class="mt-4 text-sm">
+                <a href="#" class="hover:text-white mx-2">गोपनीयता नीति</a> |
+                <a href="#" class="hover:text-white mx-2">नियम और शर्तें</a> |
+                <a href="#" class="hover:text-white mx-2">संपर्क करें</a>
+            </div>
+        </div>
     </footer>
 
-</body>
-</html>
+    <script>
+        // यह सेक्शन काल्पनिक डेटा दिखाता है, जिसे आप बाद में वास्तविक डेटा से बदल सकते हैं।
+        
+        // Live Market Data Script
+        const niftyPriceEl = document.getElementById('nifty-price');
+        const niftyChangeEl = document.getElementById('nifty-change');
+        const bankniftyPriceEl = document.getElementById('banknifty-price');
+        const bankniftyChangeEl = document.getElementById('banknifty-change');
 
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>मेरी पेशेवर वेबसाइट</title>
-    <!-- Google Fonts से Poppins फॉन्ट आयात करें -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #3b82f6; /* नीला */
-            --background-color: #1f2937; /* गहरा ग्रे */
-            --card-background: #374151; /* मध्यम ग्रे */
-            --text-color: #e5e7eb; /* हल्का ग्रे */
-            --light-text-color: #9ca3af; /* और हल्का ग्रे */
+        function fetchLiveData() {
+            const mockNiftyPrice = (23000 + Math.random() * 50 - 25).toFixed(2);
+            const mockNiftyChange = (Math.random() * 20 - 10).toFixed(2);
+            const mockBankNiftyPrice = (50000 + Math.random() * 100 - 50).toFixed(2);
+            const mockBankNiftyChange = (Math.random() * 40 - 20).toFixed(2);
+
+            niftyPriceEl.textContent = `₹${mockNiftyPrice}`;
+            niftyChangeEl.textContent = `${mockNiftyChange}%`;
+            updateChangeColor(niftyChangeEl, mockNiftyChange);
+            
+            bankniftyPriceEl.textContent = `₹${mockBankNiftyPrice}`;
+            bankniftyChangeEl.textContent = `${mockBankNiftyChange}%`;
+            updateChangeColor(bankniftyChangeEl, mockBankNiftyChange);
+        }
+
+        function updateChangeColor(element, value) {
+            const val = parseFloat(value);
+            element.classList.remove('text-green-600', 'text-red-600', 'text-gray-500');
+            if (val > 0) {
+                element.classList.add('text-green-600');
+            } else if (val < 0) {
+                element.classList.add('text-red-600');
+            } else {
+                element.classList.add('text-gray-500');
+            }
         }
         
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+        fetchLiveData();
+        setInterval(fetchLiveData, 5000);
 
-        .container {
-            width: 100%;
-            max-width: 800px;
-            background-color: var(--card-background);
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            font-weight: 400;
-            color: var(--text-color);
-            margin-top: 40px;
-        }
-
-        p {
-            font-size: 1rem;
-            line-height: 1.8;
-            color: var(--light-text-color);
-            text-align: justify;
-        }
-        
-        /* नया फ़ीचर: संपर्क फ़ॉर्म का स्टाइल */
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin-top: 20px;
-            text-align: left;
-        }
-
-        label {
-            font-size: 0.9rem;
-            color: var(--text-color);
-            margin-bottom: -5px;
-        }
-
-        input, textarea {
-            padding: 12px;
-            border: 1px solid #4b5563;
-            border-radius: 8px;
-            background-color: #1f2937;
-            color: var(--text-color);
-            width: 100%;
-            box-sizing: border-box;
-            transition: border-color 0.3s;
-        }
-
-        input:focus, textarea:focus {
-            outline: none;
-            border-color: var(--primary-color);
-        }
-
-        button {
-            padding: 12px 25px;
-            border: none;
-            border-radius: 8px;
-            background-color: var(--primary-color);
-            color: white;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.1s ease;
-        }
-
-        button:hover {
-            background-color: #2563eb;
-            transform: translateY(-2px);
-        }
-
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
+        // Results News Script
+        const resultsData = [
+            {
+                title: "TCS का Q3 मुनाफा 11,000 करोड़ रुपये को पार कर गया",
+                company: "TCS",
+                summary: "TCS ने उम्मीद से बेहतर प्रदर्शन किया, जिसका शुद्ध लाभ 11,000 करोड़ रुपये से अधिक रहा।",
+                date: "15 अगस्त, 2025"
+            },
+            {
+                title: "Infosys ने वित्तीय वर्ष 2026 के लिए राजस्व अनुमान बढ़ाया",
+                company: "Infosys",
+                summary: "Infosys ने अपने तिमाही नतीजों के बाद पूरे वित्तीय वर्ष के लिए अपने राजस्व वृद्धि अनुमान को संशोधित किया।",
+                date: "14 अगस्त, 2025"
+            },
+            {
+                title: "Reliance का Q1 मुनाफा ₹15,000 करोड़",
+                company: "Reliance",
+                summary: "रिलायंस इंडस्ट्रीज ने अपने तिमाही नतीजों में जबरदस्त मुनाफा दर्ज किया, जिसमें उसके रिटेल और जियो प्लेटफॉर्म्स ने महत्वपूर्ण योगदान दिया।",
+                date: "13 अगस्त, 2025"
             }
-            .container {
-                padding: 20px;
-            }
-            h1 {
-                font-size: 2rem;
-            }
+        ];
+
+        const newsContainer = document.getElementById('news-container');
+
+        function displayNews() {
+            newsContainer.innerHTML = '';
+            resultsData.forEach(newsItem => {
+                const newsCard = document.createElement('div');
+                newsCard.className = 'bg-white rounded-lg p-5 shadow-md transition-all duration-300 transform hover:scale-[1.01] hover:shadow-xl cursor-pointer';
+
+                const titleEl = document.createElement('h2');
+                titleEl.className = 'text-xl font-semibold text-gray-800 mb-1';
+                titleEl.textContent = newsItem.title;
+
+                const companyEl = document.createElement('p');
+                companyEl.className = 'text-sm font-medium text-indigo-600 mb-2';
+                companyEl.textContent = newsItem.company;
+
+                const summaryEl = document.createElement('p');
+                summaryEl.className = 'text-gray-600 text-sm mb-3';
+                summaryEl.textContent = newsItem.summary;
+                
+                const dateEl = document.createElement('p');
+                dateEl.className = 'text-gray-400 text-xs font-light';
+                dateEl.textContent = newsItem.date;
+
+                newsCard.appendChild(titleEl);
+                newsCard.appendChild(companyEl);
+                newsCard.appendChild(summaryEl);
+                newsCard.appendChild(dateEl);
+
+                newsContainer.appendChild(newsCard);
+            });
         }
-    </style>
-</head>
-<body>
 
-    <div class="container">
-        <h1>मेरी पहली वेबसाइट</h1>
-        <p>
-            नमस्ते! यह मेरी पहली वेबसाइट है, जिसे मैंने HTML और CSS का उपयोग करके बनाया है। यह एक बहुत ही मज़ेदार अनुभव रहा है, और मुझे कोडिंग की दुनिया को सीखने में बहुत खुशी हो रही है।
-        </p>
-
-        <h2>एक नई कहानी</h2>
-        <p>
-            आज मैं अपनी कोडिंग यात्रा का एक नया अध्याय शुरू कर रहा हूँ। मैंने सीखा है कि किसी भी बड़ी चीज़ को छोटे-छोटे हिस्सों में तोड़कर बनाना कितना आसान होता है। यह वेबसाइट भी मेरे लिए एक ऐसा ही प्रोजेक्ट है, जहाँ मैं हर दिन कुछ नया सीख रहा हूँ और उसे लागू कर रहा हूँ। मेरा लक्ष्य है कि मैं एक ऐसा डेवलपर बनूँ जो न केवल कोड लिख सके, बल्कि समस्याओं को रचनात्मक तरीके से हल भी कर सके।
-        </p>
-
-        <hr style="margin: 40px 0; border: 0; border-top: 1px solid #4b5563;">
-        <h2>हमसे संपर्क करें</h2>
-        <form action="#" method="POST">
-            <label for="name">आपका नाम:</label>
-            <input type="text" id="name" name="user_name" placeholder="अपना नाम यहाँ लिखें" required>
-
-            <label for="email">आपका ईमेल:</label>
-            <input type="email" id="email" name="user_email" placeholder="अपना ईमेल यहाँ लिखें" required>
-
-            <label for="message">आपका संदेश:</label>
-            <textarea id="message" name="user_message" rows="4" placeholder="अपना संदेश यहाँ लिखें" required></textarea>
-
-            <button type="submit">संदेश भेजें</button>
-        </form>
-    </div>
-
+        displayNews();
+    </script>
 </body>
 </html>
