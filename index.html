@@ -1,4 +1,156 @@
 <!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मेरी पेशेवर वेबसाइट</title>
+    <!-- Google Fonts से Poppins फॉन्ट आयात करें -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3b82f6; /* नीला */
+            --background-color: #1f2937; /* गहरा ग्रे */
+            --card-background: #374151; /* मध्यम ग्रे */
+            --text-color: #e5e7eb; /* हल्का ग्रे */
+            --light-text-color: #9ca3af; /* और हल्का ग्रे */
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: var(--card-background);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: var(--text-color);
+            margin-top: 40px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--light-text-color);
+            text-align: justify;
+        }
+        
+        /* नया फ़ीचर: संपर्क फ़ॉर्म का स्टाइल */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        label {
+            font-size: 0.9rem;
+            color: var(--text-color);
+            margin-bottom: -5px;
+        }
+
+        input, textarea {
+            padding: 12px;
+            border: 1px solid #4b5563;
+            border-radius: 8px;
+            background-color: #1f2937;
+            color: var(--text-color);
+            width: 100%;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+        }
+
+        button:hover {
+            background-color: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>मेरी पहली वेबसाइट</h1>
+        <p>
+            नमस्ते! यह मेरी पहली वेबसाइट है, जिसे मैंने HTML और CSS का उपयोग करके बनाया है। यह एक बहुत ही मज़ेदार अनुभव रहा है, और मुझे कोडिंग की दुनिया को सीखने में बहुत खुशी हो रही है।
+        </p>
+
+        <h2>एक नई कहानी</h2>
+        <p>
+            आज मैं अपनी कोडिंग यात्रा का एक नया अध्याय शुरू कर रहा हूँ। मैंने सीखा है कि किसी भी बड़ी चीज़ को छोटे-छोटे हिस्सों में तोड़कर बनाना कितना आसान होता है। यह वेबसाइट भी मेरे लिए एक ऐसा ही प्रोजेक्ट है, जहाँ मैं हर दिन कुछ नया सीख रहा हूँ और उसे लागू कर रहा हूँ। मेरा लक्ष्य है कि मैं एक ऐसा डेवलपर बनूँ जो न केवल कोड लिख सके, बल्कि समस्याओं को रचनात्मक तरीके से हल भी कर सके।
+        </p>
+
+        <hr style="margin: 40px 0; border: 0; border-top: 1px solid #4b5563;">
+        <h2>हमसे संपर्क करें</h2>
+        <form action="#" method="POST">
+            <label for="name">आपका नाम:</label>
+            <input type="text" id="name" name="user_name" placeholder="अपना नाम यहाँ लिखें" required>
+
+            <label for="email">आपका ईमेल:</label>
+            <input type="email" id="email" name="user_email" placeholder="अपना ईमेल यहाँ लिखें" required>
+
+            <label for="message">आपका संदेश:</label>
+            <textarea id="message" name="user_message" rows="4" placeholder="अपना संदेश यहाँ लिखें" required></textarea>
+
+            <button type="submit">संदेश भेजें</button>
+        </form>
+    </div>
+
+</body>
+</html><!DOCTYPE html>
 <html lang="hi"><!DOCTYPE html>
 <html lang="hi">
 <head>
